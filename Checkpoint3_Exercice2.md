@@ -155,3 +155,10 @@
 ![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.5.png)
 
 ### Partie 4 : Sauvegardes
+
+#### Q.2.4.1 Expliquer succinctement les rôles respectifs des 3 composants bareos installés sur la VM.
+
+- bareos-dir : Il contrôle tout et gère. Il est responsable de la configuration, de la définition et du lancement des sauvegardes.
+- bareos-sd : Il permet de réaliser des sauvegardes sur différents types de stockage.
+- bareos-fd : Il est responsable de la gestion des fichiers et de la collecte des informations à sauvegarder.
+
