@@ -7,7 +7,7 @@
 #### Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel.
 
 1. J'ai créé un compte pour mon usage personnel sur le serveur en utilisant la commande `adduser`.
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.1.1.png)
 
 #### Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 
@@ -24,7 +24,7 @@
     ```bash
     nano /etc/ssh/sshd_config
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.2.1.png)
 
 #### Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
 
@@ -33,7 +33,7 @@
     ```bash
     AllowUsers wilder123
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.2.2.png)
 
 #### Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
 
@@ -58,8 +58,8 @@
     systemctl restart sshd
 
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.2.3%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.2.3%20-2.png)
 
 ### Partie 3 : Analyse du stockage
 
@@ -70,7 +70,7 @@
     ```bash
     findmnt
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.1.png)
 
 #### Q.2.3.2 Quel type de système de stockage ils utilisent ?
 
@@ -81,7 +81,7 @@
 
 2. J'ai trouvé le système de stockage ils utilisent ces type : **disk (sda)**, **part (sda1)**, **raid1 (md0)**, **part (md0p1)**, **part (md0p2)**, **part (md0p2)**, **lvm (cp3--vg-root)**, **lvm (cp3--vg-swap_1)**.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.2.png)
 
 #### Q.2.3.3 Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
 
@@ -107,8 +107,8 @@
     lsblk
 
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.3%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.3%20-2.png)
 
 #### Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 
@@ -145,13 +145,13 @@
 7. Vérification : J'ai vérifié le montage avec la commande `lsblk`.
 
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.4%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.4%20-2.png)
 
 #### Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ?
 
 1. Il reste 383 MiB d'espace disponible dans le groupe de volume vgwilder.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/8d007b8cee83ea9b3b6e308f4673f26c7f728770/Captures%20d'%C3%A9cran/Debian/Q.2.3.5.png)
 
 ### Partie 4 : Sauvegardes
