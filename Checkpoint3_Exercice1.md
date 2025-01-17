@@ -10,13 +10,13 @@
 3. J'ai rempli les champs nécessaires (nom, e-mail, société) en utilisant les mêmes informations que **Kelly Rhameur** pour la société.
 4. J'ai appliqué une politique qui oblige l'utilisateur à changer son mot de passe lors de la première connexion.
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.1.1%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.1.1%20-2.png)
 
 #### Q.1.1.2 Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans.
 1. J'ai bien désactivé l'utilisateur et je l'ai déplacé dans l'OU DeactivatedUsers.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.1.2.png)
 
 #### Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.
 
@@ -24,15 +24,15 @@
 2. J'ai créé un groupe comme DeactivatedUsersGroup sous l'OU DeactivatedUsers. 
 3. J'ai ajouté **Kelly Rhameur** au groupe destiné aux utilisateurs désactivés comme DeactivatedUsersGroup.
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.1.3%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.1.3%20-2.png)
 
 #### Q.1.1.4 Créer le dossier Individuel du nouvel utilisateur et archive celui de Kelly Rhameur en le suffixant par -ARCHIVE.
 
 1. J'ai créé le dossier Individuel du nouvel utilisateur **Lionel Lemarchand**.
 2. J'ai localisé **Kelly Rhameur** et J'ai renommé son dossier en ajoutant le suffixe **-ARCHIVE**
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.2.4.png)
 
 ### Partie 2 : Restriction utilisateurs
 
@@ -40,20 +40,20 @@
 
 1. J'ai configuré les heures de connexion pour l'utilisateur Gabriel Ghul dans Active Directory afin qu'il puisse se connecter uniquement du lundi au vendredi, de 7h à 17h.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.2.1.png)
 
 #### Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.
 
 1. J'ai configuré l'utilisateur Gabriel Ghul pour qu'il ne puisse se connecter qu'à l'ordinateur CLIENT01.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.2.2.png)
 
 #### Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
 
 1. J'ai créé une Policy dans l'OU LabUsers.
 2. J'ai configuré une stratégie de mot de passe pour renforcer la sécurité des comptes des utilisateurs dans l'OU LabUsers.
 
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.2.3.png)
 
 ### Partie 3 : Lecteurs réseaux
 
@@ -61,5 +61,5 @@
 
 1. J'ai créé une GPO appelée Drive-Mount qui permet de monter automatiquement les lecteurs E: et F: sur les clients.
 
-![SS]()
-![SS]()
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.3.1%20-1.png)
+![SS](https://github.com/Sam-TSSR/Checkpoint_3/blob/e4196d048c7509fec214bc21893d27bd0a740f25/Captures%20d'%C3%A9cran/WinServer/Q.1.3.1%20-2.png)
